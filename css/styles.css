@@ -1,0 +1,211 @@
+/*Generic styles*/
+
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #484350;
+    background-color: #ebe9ef;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 1.2rem;
+}
+button {
+    background-color: #3d1a7b;
+    color: #fff;
+    margin: 0.4rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+}
+button:hover, button:focus, button:active {
+    background-color: #27114e;
+}
+
+/*header styles*/
+
+header .main-heading {
+    padding-left: 2rem;
+    color: #3d1a7b;
+}
+
+/*main section styles*/
+
+main {
+    padding: 0.1rem;
+}
+.btn button a {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-go {
+    cursor: pointer;
+}
+
+/*js-fiddle hyperlink styles */
+
+.js-fiddle-link {
+    position: absolute;
+    right: 0;
+    padding-right: 0.4rem;
+    top: 0;
+}
+.js-fiddle-link p {
+    margin-top: -0.6rem;
+    color: #3d1a7b;
+}
+
+/*Main section styles*/
+
+.main-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.main-section .main-subsection {
+    width: 30vw;
+    text-align: center;
+    padding: 0rem 0.8rem;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    margin: 0 0.4rem;
+}
+.user-input input {
+    padding: 0.6rem;
+    border: none;
+}
+.pattern-output img {
+    width: 30vw;
+    height: auto;
+}
+.caption-charm {
+    text-align: center;
+    width: 100%;
+    margin: 0rem 0rem 0.8rem 0rem;
+    color: #3d1a7b;
+    font-weight: 800;
+}
+.label-input-text {
+    padding-bottom: 0.4rem;
+}
+
+/*API section styles */
+
+.api-wrapper {
+    text-align: center;
+    margin: 0.4rem 0.2rem;
+}
+#api {
+    border: 1px solid #d0cfcf;
+    background-color: #fff;
+    padding: 0.4rem;
+    text-align: left;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    font-family: monospace;
+}
+#api h3 {
+    padding-bottom: 0.4rem;
+}
+
+/*Footer styles */
+
+footer {
+    background-color: #3d1a7b;
+    color: #fff;
+    padding: 0.8rem;
+}
+footer a {
+    color: #f50a5a;
+}
+
+/*Media Queries  */
+
+@media screen and (max-width: 1321px) and (min-width: 993px) {
+    .main-section .main-subsection {
+        width: 28vw;
+    }
+}
+@media screen and (max-width: 992px) and (min-width: 785px) {
+    body {
+        font-size: 80%;
+    }
+    main {
+        padding: 0.2rem;
+    }
+    .main-section .main-subsection {
+        width: 30%;
+        padding: 0;
+    }
+    .utility {
+        padding: 0.4rem;
+    }
+}
+@media screen and (max-width:784px) {
+    main {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+    .main-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .main-section .main-subsection {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .main-section .main-subsection:last-child {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .utility {
+        padding: 0.4rem;
+    }
+    .pattern-output img {
+        width: 70vw;
+    }
+    button {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:425px) {
+    .main-section .main-subsection:last-child {
+        flex-direction: column;
+    }
+    .main-section .main-subsection:last-child h2 {
+        font-size: 1rem;
+    }
+    .main-section .main-subsection:last-child .utility {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+}

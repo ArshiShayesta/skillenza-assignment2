@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tessellation - arshi</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tessellation" />
+    <meta property="og:url" content="https://tessellation.herokuapp.com/arshi?scheme=021b21032c36065f73e8dfd6ff2a1d" />
+    <meta property="og:description" content="Pattern generation API. Supports export in png and svg." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@enchantour" />
+    <meta name="twitter:creator" content="@enchantour" />
+    <meta name="twitter:url" content="https://tessellation.herokuapp.com/arshi?scheme=021b21032c36065f73e8dfd6ff2a1d" />
+    <meta name="twitter:title" content="Tessellation">
+    <meta property="fb:app_id" content="1968354866775119" />
+    <meta name="google-site-verification" content="bDTMd0UXZpFU28CmIOherFhSKP-XoNiRA6mCvvulZGU" />
+    <meta name="yandex-verification" content="997172601ec587a3" />
+    <meta property="og:image" content="https://tessellation.herokuapp.com/arshi?scheme=021b21032c36065f73e8dfd6ff2a1d&amp;type=png&amp;time=1505288112" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header content-->
+    <header>
+        <h2 class="main-heading">TESSELLATION</h2>
+        <div class="js-fiddle-link">
+            <a href="https://jsfiddle.net/enchantour/c0n4npLL/"><img src="images/jsfiddle-logo.svg" style="width:2.5rem;"></a>
+            <p><small>Fiddle it!</small></p>
+        </div>
+
+    </header>
+    <!--Main body content-->
+    <main>
+
+        <div class="main-section">
+
+            <div class="main-subsection user-input">
+                <p>
+                    <span><h2 class="label-input-text">Enter a charm text</h2></span>
+                    <input type="text" placeholder="For example your name, favouite destination etc." id="text" />
+
+                    <button id="go" class="btn btn-go">GO</button>
+                </p>
+                <p class="caption">
+                    <span><h2>Choose combination:</h2></span>
+                    <div class="btn">
+                        <button><a href="/">RESET</a></button>
+                        <button><a href="javascript:window.location.reload();">RELOAD</a></button>
+                        <button><a href="/random">RANDOM</a></button>
+                        <button><a href="/random?scheme=021b21032c36065f73e8dfd6ff2a1d">RANDOM TEXT</a></button>
+                        <button><a href="/arshi">RANDOM SCHEME</a></button>
+                    </div>
+                </p>
+            </div>
+            <div class="main-subsection user-image">
+                <div class="caption caption-charm">
+                    <h2><span class="string-label">Your charm text is: </span><span class="gray">arshi</span></h2></div>
+                <div class="pattern-output">
+                    <a id="image_link" href="/arshi?scheme=021b21032c36065f73e8dfd6ff2a1d"><img src="./images/pattern.svg"></a>
+                </div>
+                <div class="similar-tags">
+                    <div id="list">
+                        <h3><strong>Similar</strong></h3>
+                        <div id="similar" class="btn">
+                            <button><a href="/art?scheme=021b21032c36065f73e8dfd6ff2a1d">art</a></button>
+                            <button><a href="/color?scheme=021b21032c36065f73e8dfd6ff2a1d">color</a></button>
+                            <button><a href="/generative?scheme=021b21032c36065f73e8dfd6ff2a1d">generative</a></button>
+                            <button><a href="/mathematics?scheme=021b21032c36065f73e8dfd6ff2a1d">mathematics</a></button>
+                            <button><a href="/pattern?scheme=021b21032c36065f73e8dfd6ff2a1d">pattern</a></button>
+                            <button><a href="/random?scheme=021b21032c36065f73e8dfd6ff2a1d">random</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-subsection user-output">
+                <div class="utility save-image">
+                    <span><h2>Like it? Download</h2></span>
+                    <div class="btn">
+                        <button><a href="" id="apng">PNG</a></button>
+                        <button><a href="" id="asvg">SVG</a></button>
+                    </div>
+                </div>
+                <div class="utility share-image">
+                    <span><h2>Loved it? Share</h2></span>
+                    <div class="btn">
+                        <button><a id="fb_share" href="#" target="_blank">FACEBOOK</a></button>
+                        <button><a id="tweet" href="#" target="_blank">TWEET</a></button>
+                    </div>
+                </div>
+                <div class="utility share-feedack">
+                    <span><h2>Have an opinion?</h2></span>
+                    <div class="btn">
+                        <button><a href="mailto:choudhury.prateeksen@gmail.com">SHARE YOUR FEEDBACK</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--API content-->
+        <div class="api-wrapper">
+            <div id="api">
+
+                <h3><strong>API</strong></h3> $ curl https://tessellation.herokuapp.com/YOUR_TEXT?scheme=021b21032c36065f73e8dfd6ff2a1d
+                <br />
+                <br /> $ curl https://tessellation.herokuapp.com/random?type=svg > $(date +%s).svg
+                <br />
+                <br /> $ curl https://tessellation.herokuapp.com/random?type=png > $(date +%s).png
+
+
+
+            </div>
+        </div>
+        <!--Footer content-->
+        <footer>
+            <small>Schemes powered by <a href="https://color.adobe.com/" target="_blank">Kuler</a>&nbsp;/&nbsp;</small>
+            <small>Lexical search powered by <a href="https://www.datamuse.com/api/" target="_blank">Datamuse</a></small>&nbsp;/&nbsp;<small>Copyright &copy;  <a href="https://enchantour.com">Prateeksen Choudhury</a></small>
+            <link rel="stylesheet" type="text/css" href="css/styles.css">
+        </footer>
+</body>
+
+</html>
